@@ -11,15 +11,15 @@ console.log('titleElement1の中身 :', titleElement1);
  *   - querySelectorを使う
  *   - console.logで取得したDOMの中身を確認する
  */
-const containerElement = document.getElementById('item-container');
-console.log('containerElementの中身 :',containerElement);
+const containerElement = document.querySelector('#item-container');
+console.log('containerElementの中身 :', containerElement);
 
 /**
  * 課題3: li要素を全て取得する
  *   - console.logで取得したDOMの中身を確認する
  */
-const liElements = document.querySelectorAll('li');
-console.log('liElement :',liElements);
+const liElements = document.getElementsByTagName('li');
+console.log('liElement :', liElements);
 
 /**
  * 課題4: class値が 'item' の要素を全て取得する
@@ -27,7 +27,7 @@ console.log('liElement :',liElements);
  *   - console.logで取得したDOMの中身を確認する
  */
 const itemElement1 = document.getElementsByClassName('item');
-console.log('itemElement1 :',itemElement1);
+console.log('itemElement1 :', itemElement1);
 
 /**
  * 課題5: class値が 'item' の要素を全て取得する
@@ -35,4 +35,4 @@ console.log('itemElement1 :',itemElement1);
  *   - console.logで取得したDOMの中身を確認する
  */
 const itemElement2 = document.querySelectorAll('.item');
-console.log('itemElement2 :',itemElement2);
+console.log('itemElement2 :', itemElement2);
